@@ -9,9 +9,24 @@ function App() {
  
   const addvalue=()=>{
      //console.log("add value",Math.random())
-     count=count+1;
+     //count=count+1;
      //console.log(count)
-     setCount(count)
+     //setCount(()=>{})//useState give a callback function
+
+    
+
+    //  setCount(count+1) //0+1=1
+    //  setCount(count+1) //0+1=1
+    //  setCount(count+1) //0+1=1
+    //  setCount(count+1) //all work same counter just increace by one
+
+      // setCount((prevCount)=>prevCount+1) //0+1=1
+      // setCount((prevCount)=>prevCount+1) //1+1=2
+      // setCount((prevCount)=>prevCount+1) //2+1=3
+      // setCount((prevCount)=>prevCount+1) //3+1=4
+      // setCount((prevCount)=>prevCount+1) //4+1=5
+
+      setCount(count+1)
   }
   const removevalue=()=>{
      count--;
